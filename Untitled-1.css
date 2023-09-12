@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+    
+h1{
+    color: #173F35;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul{
+    background-color: #e6e6f2;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav li{
+    display: inline-flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: #173F35;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li :hover{
+    background-color: #6fb98f;
+}
+
+.img{
+    width: 100px;
+    height: 75px;
+    margin-top: 2px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px solid #173F35;
+}
+
+.logo {
+    display: flex;
+}
+
+header{
+    background-color: #6fb98f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.busqueda{
+    position: absolute;
+    top: 40px;
+    left: 800px;
+    padding: 0px 10px;
+    display: flex;
+    margin-top: -31px;
+}
+
+.busqueda input{
+    width: 220px;
+    height: 30px;
+    padding: 0 20px 0 30px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 1px solid #6fb98f;
+    border-radius: 30px;
+}
+
+input{
+    background-image: url(imagenes/pngtree-search-icon-png-image_4699282.jpg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ingresar{
+    background-image: url();
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #A2C523;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 5px;
+    left: 1240px;
+    display: inline-block;
+    cursor: pointer;
+    border:  2px solid #173F35;
+}
+
+.ingresar a{
+    color: #173F35;
+    border-color: #173F35;
+}
+
+.ingresar:hover{
+    background-color: transparent;
+    border:3px solid #173F35;
+    color: #173F35;
+}
+
+.Registrarse{
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #A2C523;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border:  2px solid #173F35;
+}
+
+.Registrarse a{
+    color: #173F35;
+    border-color: #173F35;
+}
+
+.Registrarse:hover{
+    background-color: transparent;
+    border: 3px solid #173F35;
+    color: #173F35;
+}
+
+.img1{
+  position: absolute;
+  right: 0;
+  border:2px solid #A2C523;
+  padding: 0 0 0 870px;
+  background-color: #849a35;
+  
+}
+
+.p1{
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.p2{
+    position: absolute;
+    left: 170px;
+    top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.p3{position: absolute;
+    left: 50px;
+    top: 280px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(82, 60, 25);
+}
+
+.resaltar{
+    color: #173F35;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+.resaltar:hover{
+    color: #2a592e;
+    text-shadow: 0 0 5px #6fb98f, 
+    0 0 25px #6fb98f,
+    0 0 50px #6fb98f,
+    0 0 100px #6fb98f;
+}
+
+hr{
+    position: absolute;
+    color: #173F35;
+    left: 120px;
+    top: 115px;
+}
+
+.carrusel{
+    width: 1280px;
+    height: auto;
+    margin-top: 350px;
+    margin-left: 40px;
+    overflow: hidden;
+    border: 5px solid rgb(82, 60, 25);
+   
+}
+
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: carrusel 15s infinite alternate ease-in-out;
+}
+
+.carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img{
+width: 100%;
+}
+
+@keyframes carrusel{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+@media(max-width:991px){
+    .carrusel{
+        width: 20%;
+    }
+}
+
+body{
+    background: url(imagenes/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    color: #173F35;
+    margin-top: 50px;
+    margin-bottom: 25px;
+   background-color: #849a35;
+   padding: 15px;
+}
+
+.galeria{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.galeria .productos{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #849a35;
+    text-decoration: none;
+    
+}
+
+.galeria .productos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(82, 60, 25);
+}
+
+.galeria .productos img{
+    width: 330px;
+    height: 220px;
+}
+
+.galeria .productos h4{
+    margin-top: 12px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(82, 60, 25);
+    padding: 5px ;
+    color: aliceblue;
+}
+
+.galeria .productos p{
+    padding: 0 1rem;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.galeria .productos a{
+    color: black;
+}
+
+.verproductos{
+    background-color: #849a35;
+    border:  2px solid #173F35;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 505px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #173F35;
+    transition: all 0.25s;
+}
+
+.verproductos:hover{
+    background-color: #173F35;
+    border:  3px solid #173F35;
+    color: #849a35;
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(82, 60, 25);
+}
+
+.pie-de-pagina{
+    width: 100%;
+    background-color: #6fb98f;
+    margin-top: 1100px;
+}
+
+.pie-de-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box figure{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.pie-de-pagina .grupo-1 .box figure img {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #173F35;
+}
+
+.pie-de-pagina .grupo-1 .box h2{
+    color: #173F35;
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie-de-pagina .grupo-1 .box p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.pie-de-pagina .grupo-2{
+    background-color:  #173F35;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.pie-de-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie-de-pagina .grupo-1 .box .politicas{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box .Red-social ul{ 
+    list-style-type: none;
+}
+
+.box .Red-social li{
+    display: inline-flex;
+}
+
+.Red-social ul .facebook img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.Red-social ul .instagram img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.Red-social ul .twitter img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.Red-social ul .pinterest img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
